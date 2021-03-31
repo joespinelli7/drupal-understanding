@@ -20,7 +20,8 @@
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
-        "drupal/examples": "^3.0"
+        "drupal/examples": "^3.0",
+        "drupal/media_entity_libsyn": "^2.1"
     },
     "conflict": {
         "drupal/drupal": "*"
