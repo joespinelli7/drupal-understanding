@@ -1,0 +1,38 @@
+uuid: 95cf334d-3305-43ab-827b-1f277174686d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.libsyn_podcast.field_media_libsyn
+    - media.type.libsyn_podcast
+  module:
+    - media_entity_libsyn
+id: media.libsyn_podcast.default
+targetEntityType: media
+bundle: libsyn_podcast
+mode: default
+content:
+  field_media_libsyn:
+    label: visually_hidden
+    weight: 0
+    settings:
+      width: 700px
+      height: 90px
+      custom_color: 87A93A
+      theme: custom
+      direction: forward
+      options:
+        autonext: ''
+        thumbnail: thumbnail
+        autoplay: ''
+        preload: ''
+        no_addthis: ''
+        render_playlist: ''
+    third_party_settings: {  }
+    type: libsyn_embed
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

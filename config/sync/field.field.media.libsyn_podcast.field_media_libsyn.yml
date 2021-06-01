@@ -1,0 +1,23 @@
+uuid: 55785109-d38e-4e93-a2a8-a995e6db14d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_libsyn
+    - media.type.libsyn_podcast
+  module:
+    - link
+id: media.libsyn_podcast.field_media_libsyn
+field_name: field_media_libsyn
+entity_type: media
+bundle: libsyn_podcast
+label: 'Libsyn Podcast'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

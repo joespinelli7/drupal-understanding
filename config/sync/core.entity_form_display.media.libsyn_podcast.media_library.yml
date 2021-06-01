@@ -1,0 +1,27 @@
+uuid: 3e8bb535-c487-48e1-9c3e-8ca26d59e27e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.libsyn_podcast.field_media_libsyn
+    - media.type.libsyn_podcast
+id: media.libsyn_podcast.media_library
+targetEntityType: media
+bundle: libsyn_podcast
+mode: media_library
+content:
+  name:
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_libsyn: true
+  path: true
+  status: true
+  uid: true

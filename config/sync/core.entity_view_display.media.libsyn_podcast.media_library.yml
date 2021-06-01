@@ -1,0 +1,30 @@
+uuid: 7aa8f9f8-0498-417c-b537-b0ec818e46a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.libsyn_podcast.field_media_libsyn
+    - image.style.medium
+    - media.type.libsyn_podcast
+  module:
+    - image
+id: media.libsyn_podcast.media_library
+targetEntityType: media
+bundle: libsyn_podcast
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_libsyn: true
+  name: true
+  uid: true
