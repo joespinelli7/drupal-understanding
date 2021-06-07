@@ -1,6 +1,6 @@
 uuid: d873c2d1-7f30-4249-b0a9-fba3bb84dfd3
 name: 'Sports with Spinelli'
-mail: spinellisports@support.com
+mail: spinellisports@business.com
 slogan: 'All the latest sports news in 60 seconds or less'
 page:
   403: ''
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: spinellisports@support.com
