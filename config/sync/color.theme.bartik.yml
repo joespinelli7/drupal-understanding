@@ -6,11 +6,11 @@ palette:
   sidebarborders: '#292929'
   footer: '#292929'
   titleslogan: '#fffeff'
-  text: '#fff'
+  text: '#292929'
   link: '#0071b3'
-logo: 'public://color/bartik-a842e9c9/logo.svg'
+logo: 'public://color/bartik-e56ef6ec/logo.svg'
 stylesheets:
-  - 'public://color/bartik-a842e9c9/colors.css'
+  - 'public://color/bartik-e56ef6ec/colors.css'
 files:
-  - 'public://color/bartik-a842e9c9/logo.svg'
-  - 'public://color/bartik-a842e9c9/colors.css'
+  - 'public://color/bartik-e56ef6ec/logo.svg'
+  - 'public://color/bartik-e56ef6ec/colors.css'
