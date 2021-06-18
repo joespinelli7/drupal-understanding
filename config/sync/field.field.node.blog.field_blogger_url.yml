@@ -1,0 +1,23 @@
+uuid: 8001b445-7484-44b7-98d8-7e7f19ed0beb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blogger_url
+    - node.type.blog
+  module:
+    - link
+id: node.blog.field_blogger_url
+field_name: field_blogger_url
+entity_type: node
+bundle: blog
+label: 'Blogger URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

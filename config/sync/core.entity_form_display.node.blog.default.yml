@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.blog.body
+    - field.field.node.blog.field_blogger_url
+    - field.field.node.blog.field_header_image
     - node.type.blog
   module:
+    - link
+    - media_library
     - path
     - text
 id: node.blog.default
@@ -29,6 +33,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_blogger_url:
+    weight: 123
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_header_image:
+    type: media_library_widget
+    weight: 122
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
