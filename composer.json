@@ -21,7 +21,8 @@
         "drupal/core-project-message": "^9.1",
         "drupal/core-recommended": "^9.1",
         "drupal/examples": "^3.0",
-        "drupal/media_entity_libsyn": "^2.1"
+        "drupal/media_entity_libsyn": "^2.1",
+        "drupal/pathauto": "^1.8"
     },
     "conflict": {
         "drupal/drupal": "*"
