@@ -1,0 +1,23 @@
+uuid: 19bb27f4-94d5-4d8a-8c03-e639f23a7f1a
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: blog_sports
+label: 'Blog Sports'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'sport/[term:name]'
+selection_criteria:
+  21c03cd9-def5-4c3c-a014-904e96332497:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      sports: sports
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 21c03cd9-def5-4c3c-a014-904e96332497
+selection_logic: and
+weight: -5
+relationships: {  }
