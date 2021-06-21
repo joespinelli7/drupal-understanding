@@ -1,21 +1,19 @@
-uuid: 0322eddc-f853-42a0-8fde-ffdf9443e4c8
+uuid: ada602df-b3a3-44b4-9262-9b8132c84576
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.blog.body
-    - field.field.node.blog.field_blogger_url
-    - field.field.node.blog.field_header_image
-    - field.field.node.blog.field_published_by
-    - field.field.node.blog.field_sports
-    - node.type.blog
+    - field.field.node.author.body
+    - field.field.node.author.field_author_bio
+    - field.field.node.author.field_author_name
+    - node.type.author
   module:
     - text
     - user
-id: node.blog.teaser
+id: node.author.teaser
 targetEntityType: node
-bundle: blog
+bundle: author
 mode: teaser
 content:
   body:
@@ -32,7 +30,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_blogger_url: true
-  field_header_image: true
-  field_published_by: true
-  field_sports: true
+  field_author_bio: true
+  field_author_name: true

@@ -1,22 +1,18 @@
-uuid: bc2fcfdf-26c6-49e4-b4a2-9eb9d30a06ee
+uuid: ec70eb90-6ecb-41ee-bf6e-9bd2b8958abf
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.blog.body
-    - field.field.node.blog.field_blogger_url
-    - field.field.node.blog.field_header_image
-    - field.field.node.blog.field_published_by
-    - field.field.node.blog.field_sports
-    - node.type.blog
+    - field.field.node.author.body
+    - field.field.node.author.field_author_bio
+    - field.field.node.author.field_author_name
+    - node.type.author
   module:
-    - link
-    - media_library
     - path
     - text
-id: node.blog.default
+id: node.author.default
 targetEntityType: node
-bundle: blog
+bundle: author
 mode: default
 content:
   body:
@@ -35,40 +31,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_blogger_url:
-    weight: 123
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_header_image:
-    type: media_library_widget
+  field_author_bio:
     weight: 122
     settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_published_by:
-    weight: 125
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
     region: content
-  field_sports:
-    weight: 124
+  field_author_name:
+    weight: 123
     settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: string_textfield
     region: content
   path:
     type: path

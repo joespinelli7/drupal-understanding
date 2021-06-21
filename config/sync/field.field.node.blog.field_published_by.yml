@@ -1,0 +1,29 @@
+uuid: 5ff2fb3c-4b22-4281-861d-64496a40756d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_published_by
+    - node.type.author
+    - node.type.blog
+id: node.blog.field_published_by
+field_name: field_published_by
+entity_type: node
+bundle: blog
+label: 'Published by'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      author: author
+    sort:
+      field: field_author_name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
