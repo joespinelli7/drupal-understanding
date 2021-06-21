@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_blogger_url
     - field.field.node.blog.field_header_image
+    - field.field.node.blog.field_sports
     - node.type.blog
   module:
     - link
@@ -47,6 +48,16 @@ content:
     settings:
       media_types: {  }
     third_party_settings: {  }
+    region: content
+  field_sports:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   path:
     type: path

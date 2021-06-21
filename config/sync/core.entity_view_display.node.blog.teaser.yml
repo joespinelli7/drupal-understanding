@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_blogger_url
     - field.field.node.blog.field_header_image
+    - field.field.node.blog.field_sports
     - node.type.blog
   module:
     - text
@@ -32,3 +33,4 @@ content:
 hidden:
   field_blogger_url: true
   field_header_image: true
+  field_sports: true

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.blog.body
     - field.field.node.blog.field_blogger_url
     - field.field.node.blog.field_header_image
+    - field.field.node.blog.field_sports
     - node.type.blog
   module:
     - link
@@ -43,6 +44,14 @@ content:
       view_mode: default
       link: false
     third_party_settings: {  }
+    region: content
+  field_sports:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100

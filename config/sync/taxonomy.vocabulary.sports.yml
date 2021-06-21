@@ -1,0 +1,8 @@
+uuid: 38be815a-d774-4263-8ccc-829b99552dee
+langcode: en
+status: true
+dependencies: {  }
+name: Sports
+vid: sports
+description: 'Use sports to group blog posts on similar topics into categories.'
+weight: 0
