@@ -1,0 +1,15 @@
+uuid: ad504918-19c6-42f0-a6ff-1f6f2c1c437c
+langcode: en
+status: true
+dependencies: {  }
+name: banner_image_max_width_1024px_
+label: 'Banner Image (max width 1024px)'
+effects:
+  f02b1a76-0c2e-4b5a-ab0b-59e5e9c1afe3:
+    uuid: f02b1a76-0c2e-4b5a-ab0b-59e5e9c1afe3
+    id: image_scale
+    weight: 1
+    data:
+      width: 1024
+      height: null
+      upscale: false
