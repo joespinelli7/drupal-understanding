@@ -1,10 +1,9 @@
-uuid: 5ff2fb3c-4b22-4281-861d-64496a40756d
+uuid: 3e8e1835-6130-4280-855b-3df0c492d505
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_published_by
-    - node.type.author
     - node.type.blog
 id: node.blog.field_published_by
 field_name: field_published_by
@@ -17,13 +16,14 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:user'
   handler_settings:
-    target_bundles:
-      author: author
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
     sort:
-      field: field_author_name
+      field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: ''
 field_type: entity_reference
