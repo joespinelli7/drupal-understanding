@@ -1,0 +1,25 @@
+uuid: b8b19346-3bdf-41e5-a6a9-b30933993506
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:788b5948-3500-4d97-8f10-1c486c831a10'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: contactusblock
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:788b5948-3500-4d97-8f10-1c486c831a10'
+settings:
+  id: 'block_content:788b5948-3500-4d97-8f10-1c486c831a10'
+  label: 'Contact Us'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
